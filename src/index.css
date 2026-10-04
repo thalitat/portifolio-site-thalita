@@ -1,0 +1,101 @@
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --navy: #071b33;
+  --navy-soft: #123b59;
+  --tiffany: #18c6c3;
+  --tiffany-strong: #087c82;
+  --ink: #102337;
+  --muted: #53697b;
+  --bg: #eff1f3;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-glass: rgba(255, 255, 255, 0.8);
+  --tag-bg: rgba(24, 198, 195, 0.1);
+  --tag-ink: var(--navy);
+  --border: rgba(7, 27, 51, 0.1);
+  --border-strong: rgba(7, 27, 51, 0.2);
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --band-aqua: #dceefa;
+  --band-ice: #eff1f3;
+  --band-paper: #dceefa;
+  --band-mint: #f1f2f4;
+  --band-gray: #eff1f3;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --navy: #04101f;
+  --navy-soft: #0b2c43;
+  --tiffany: #32d7d0;
+  --tiffany-strong: #5ce0d5;
+  --ink: #e9f3f8;
+  --muted: #afc2ce;
+  --bg: #252c32;
+  --surface: rgba(14, 35, 52, 0.9);
+  --surface-glass: rgba(9, 27, 43, 0.9);
+  --tag-bg: rgba(24, 198, 195, 0.12);
+  --tag-ink: var(--tiffany-strong);
+  --border: rgba(167, 243, 233, 0.14);
+  --border-strong: rgba(167, 243, 233, 0.28);
+  --band-aqua: #162f40;
+  --band-ice: #252c32;
+  --band-paper: #162f40;
+  --band-mint: #2b3036;
+  --band-gray: #252c32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+::selection {
+  background: rgba(24, 198, 195, 0.3);
+}
