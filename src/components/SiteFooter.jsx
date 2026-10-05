@@ -1,4 +1,4 @@
-import { socialLinks } from '../data/siteContent'
+import { socialLinks } from '../content/siteContent'
 
 function SiteFooter({ copy }) {
   return (

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import './App.css'
-import { siteCopy } from './data/siteContent'
-import { useScrollReveal } from './hooks/useScrollReveal'
-import HomePage from './pages/HomePage'
+import '../styles/app.css'
+import { siteCopy } from '../content/siteContent'
+import { useScrollReveal } from '../hooks/useScrollReveal'
+import HomePage from '../pages/HomePage'
 
 function App() {
   const [language, setLanguage] = useState('pt')

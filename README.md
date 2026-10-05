@@ -48,19 +48,28 @@ Depois do primeiro deploy, o site fica disponível em
 ## Estrutura
 
 ```text
+.github/
+	workflows/
+		deploy-pages.yml   Publicação automática no GitHub Pages
+		node.js.yml        Verificação de lint e build
+.vscode/
+	launch.json         Depuração do Vite no Chrome
+	tasks.json          Inicialização do servidor ao depurar
 public/
-	delivery-work.jpg      Imagem da seção de produto
-	favicon.svg            Ícone do site
+	delivery-work.jpg   Imagem da seção de produto
+	favicon.svg         Ícone do site
 src/
-	App.jsx                Estado global, tema e idioma
-	App.css                Componentes e layout responsivo
-	index.css              Tokens globais, cores e reset
-	main.jsx               Inicialização do React
-	components/             Elementos compartilhados da interface
-	data/siteContent.js    Textos em português, inglês e espanhol
-	hooks/                  Comportamentos reutilizáveis
-	pages/HomePage.jsx      Composição da página principal
-	sections/               Seções agrupadas por área de conteúdo
+	app/App.jsx          Estado global, tema e idioma
+	components/          Cabeçalho, rodapé, idioma e contato
+	content/             Textos em português, inglês e espanhol
+	hooks/               Comportamentos reutilizáveis
+	pages/               Composição da página principal
+	sections/            Seções agrupadas por área de conteúdo
+	styles/              Estilos globais e da interface
+	main.jsx              Inicialização do React
+index.html              Documento de entrada do Vite
+package.json            Dependências e scripts
+vite.config.js          Configuração do Vite
 ```
 
-Configurações do Vite e o `index.html` permanecem na raiz, como esperado pelo projeto. Para atualizar textos ou traduções, edite `src/data/siteContent.js`. Elementos compartilhados ficam em `src/components/`, comportamentos reutilizáveis em `src/hooks/` e seções da página em `src/sections/`.
+Arquivos que o Vite e o GitHub Actions esperam na raiz permanecem nessa posição. Para atualizar textos ou traduções, edite `src/content/siteContent.js`; componentes reutilizáveis ficam em `src/components/`, comportamento em `src/hooks/`, e a composição das áreas do site em `src/pages/` e `src/sections/`.
