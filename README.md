@@ -39,6 +39,12 @@ O Vite informa a URL local no terminal.
 | `npm run preview` | Abre localmente a versão de produção. |
 | `npm run lint` | Verifica o código com Oxlint. |
 
+## Publicação
+
+Cada push para a branch `main` executa o CI e publica o site no GitHub Pages.
+Depois do primeiro deploy, o site fica disponível em
+<https://thalitat.github.io/portifolio-site-thalita/>.
+
 ## Estrutura
 
 ```text

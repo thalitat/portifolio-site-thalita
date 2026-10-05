@@ -75,7 +75,11 @@ function DeliverySection({ copy }) {
         </div>
 
         <figure className="delivery-image motion-card motion-hover">
-          <img src="/delivery-work.jpg" alt={copy.deliveryImageAlt} loading="lazy" />
+          <img
+            src={`${import.meta.env.BASE_URL}delivery-work.jpg`}
+            alt={copy.deliveryImageAlt}
+            loading="lazy"
+          />
         </figure>
       </div>
     </section>
