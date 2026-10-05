@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug site (Vite + Chrome)",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:5175",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Start Vite for debugging"
+    }
+  ]
+}

@@ -46,10 +46,15 @@ public/
 	delivery-work.jpg      Imagem da seção de produto
 	favicon.svg            Ícone do site
 src/
-	App.jsx                Estrutura e interações da página
+	App.jsx                Estado global, tema e idioma
 	App.css                Componentes e layout responsivo
-	index.css              Tokens de cor e temas
+	index.css              Tokens globais, cores e reset
+	main.jsx               Inicialização do React
+	components/             Elementos compartilhados da interface
 	data/siteContent.js    Textos em português, inglês e espanhol
+	hooks/                  Comportamentos reutilizáveis
+	pages/HomePage.jsx      Composição da página principal
+	sections/               Seções agrupadas por área de conteúdo
 ```
 
-Para atualizar textos ou traduções, edite `src/data/siteContent.js`. A estrutura e as interações ficam em `src/App.jsx`.
+Configurações do Vite e o `index.html` permanecem na raiz, como esperado pelo projeto. Para atualizar textos ou traduções, edite `src/data/siteContent.js`. Elementos compartilhados ficam em `src/components/`, comportamentos reutilizáveis em `src/hooks/` e seções da página em `src/sections/`.

@@ -1162,7 +1162,7 @@
 
 .location-card {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: 24px;
   padding: 22px;
   border: 1px solid var(--border);
@@ -1172,6 +1172,7 @@
 
 .map-panel {
   position: relative;
+  min-width: 0;
   min-height: 240px;
   overflow: hidden;
   border: 1px solid rgba(24, 198, 195, 0.22);
@@ -1405,7 +1406,7 @@
 .whatsapp-float {
   position: fixed;
   right: max(22px, env(safe-area-inset-right));
-  bottom: max(22px, env(safe-area-inset-bottom));
+  bottom: max(76px, calc(env(safe-area-inset-bottom) + 64px));
   z-index: 20;
   display: inline-flex;
   align-items: center;
@@ -1577,6 +1578,15 @@
     padding: 22px;
   }
 
+  .location-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .map-panel {
+    height: clamp(220px, 65vw, 300px);
+    min-height: 0;
+  }
+
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
@@ -1588,7 +1598,7 @@
 
   .whatsapp-float {
     right: 14px;
-    bottom: max(14px, env(safe-area-inset-bottom));
+    bottom: max(76px, calc(env(safe-area-inset-bottom) + 64px));
     min-height: 52px;
     padding: 0 15px;
   }
