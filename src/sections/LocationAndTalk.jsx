@@ -1,5 +1,6 @@
 const talkUrl = 'https://www.youtube.com/live/WgqPl0FiYCM'
 const talkEmbedUrl = 'https://www.youtube-nocookie.com/embed/WgqPl0FiYCM'
+const youtubeChannelUrl = 'https://www.youtube.com/@MeninaUX'
 
 function LocationAndTalk({ copy }) {
   return (
@@ -11,10 +12,10 @@ function LocationAndTalk({ copy }) {
         </div>
 
         <div className="location-card motion-card motion-hover">
-          <div className="map-panel" aria-label="Mapa de Uberaba e atendimento remoto">
+          <div className="map-panel" aria-label={copy.mapPanelLabel}>
             <iframe
-              src="https://www.google.com/maps?q=Uberaba%2C%20MG&z=11&output=embed"
-              title="Mapa de Uberaba, Minas Gerais"
+              src={`https://www.google.com/maps?q=Uberaba%2C%20MG&z=11&output=embed&hl=${copy.mapLocale}`}
+              title={copy.mapFrameTitle}
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
@@ -35,9 +36,14 @@ function LocationAndTalk({ copy }) {
           <p className="eyebrow">{copy.talkEyebrow}</p>
           <h2>{copy.talkTitle}</h2>
           <p>{copy.talkDescription}</p>
-          <a className="primary-btn" href={talkUrl} target="_blank" rel="noreferrer">
-            {copy.watchTalk}
-          </a>
+          <div className="talk-actions">
+            <a className="primary-btn" href={talkUrl} target="_blank" rel="noreferrer">
+              {copy.watchTalk}
+            </a>
+            <a className="ghost-btn" href={youtubeChannelUrl} target="_blank" rel="noreferrer">
+              {copy.watchChannel}
+            </a>
+          </div>
         </div>
         <div className="video-frame motion-card">
           <iframe

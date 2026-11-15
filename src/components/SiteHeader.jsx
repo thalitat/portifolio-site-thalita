@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import LanguageFlag from './LanguageFlag'
 
 const languageOptions = [
@@ -9,11 +9,13 @@ const languageOptions = [
 
 function SiteHeader({ copy, language, setLanguage, isDark, setIsDark }) {
   const languagePickerRef = useRef(null)
+  const mobileNavButtonRef = useRef(null)
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
   const selectedLanguage = languageOptions.find((option) => option.code === language)
 
   return (
     <header className="topbar">
-      <a className="brand-wrap" href="#sobre" aria-label="Thalita Oliveira, início">
+      <a className="brand-wrap" href="#sobre" aria-label={copy.homeLabel}>
         <span className="brand-mark" aria-hidden="true">TO</span>
         <span className="brand-text">
           <span className="brand-name">Thalita Oliveira</span>
@@ -21,15 +23,43 @@ function SiteHeader({ copy, language, setLanguage, isDark, setIsDark }) {
         </span>
       </a>
 
-      <nav className="main-nav" aria-label="Navegação principal">
-        <a href="#sobre">{copy.nav[0]}</a>
-        <a href="#projetos">{copy.nav[1]}</a>
-        <a href="#servicos">{copy.nav[2]}</a>
-        <a href="#palestra">{copy.nav[3]}</a>
-        <a href="#contato">{copy.nav[4]}</a>
+      <nav
+        className={`main-nav${isMobileNavOpen ? ' is-open' : ''}`}
+        id="primary-navigation"
+        aria-label={copy.navigationLabel}
+        onKeyDown={(event) => {
+          if (event.key === 'Escape' && isMobileNavOpen) {
+            setIsMobileNavOpen(false)
+            mobileNavButtonRef.current?.focus()
+          }
+        }}
+      >
+        <ul>
+          <li><a href="#sobre" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[0]}</a></li>
+          <li><a href="#projetos" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[1]}</a></li>
+          <li><a href="#servicos" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[2]}</a></li>
+          <li><a href="#palestra" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[3]}</a></li>
+          <li><a href="#impacto" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[4]}</a></li>
+          <li><a href="#contato" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[5]}</a></li>
+        </ul>
       </nav>
 
       <div className="header-tools">
+        <button
+          ref={mobileNavButtonRef}
+          className={`mobile-nav-toggle${isMobileNavOpen ? ' is-open' : ''}`}
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded={isMobileNavOpen}
+          aria-label={isMobileNavOpen ? copy.mobileMenuClose : copy.mobileMenuOpen}
+          onClick={() => setIsMobileNavOpen((open) => !open)}
+        >
+          <span className="hamburger-icon" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
+        </button>
         <div className="language-picker">
           <details
             ref={languagePickerRef}

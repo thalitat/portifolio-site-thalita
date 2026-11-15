@@ -1,24 +1,34 @@
 export const siteCopy = {
   pt: {
     languageName: 'Português',
-    nav: ['Sobre', 'Projetos', 'Serviços', 'Palestra', 'Contato'],
-    role: 'Design Engineer',
+    pageTitle: 'Thalita Oliveira — Produtos Digitais & TI',
+    metaDescription: 'Thalita Oliveira — Product Designer e Product Owner em produtos digitais e TI. Projetos, métricas, aulas, mentorias e palestras.',
+    navigationLabel: 'Navegação principal',
+    homeLabel: 'Thalita Oliveira, início',
+    mapPanelLabel: 'Mapa de Uberaba e atendimento remoto',
+    mapFrameTitle: 'Mapa de Uberaba, Minas Gerais',
+    mapLocale: 'pt-BR',
+    nav: ['Sobre', 'Projetos', 'Serviços', 'Palestras', 'Voluntariado', 'Contato'],
+    role: 'Produtos Digitais & TI',
     headerCta: 'Falar comigo',
-    eyebrow: 'Design com estratégia e clareza',
-    heroTitle: 'Design e tecnologia para criar produtos digitais que fazem sentido.',
+    eyebrow: 'Produto digital, UX e tecnologia',
+    heroTitle: 'Produto digital com estratégia e impacto.',
     heroDescription:
-      'Conecto experiência do usuário, estratégia de negócio e tecnologia para criar produtos digitais mais simples, eficientes e escaláveis.',
+      'Sou Product Designer (UX/UI) e Product Owner, com mais de 7 anos de experiência em produtos B2B, SaaS e ERP. Conecto estratégia, pesquisa, design e tecnologia para criar soluções úteis, viáveis e orientadas a resultados.',
     servicesCta: 'Ver serviços',
+    projectsCta: 'Ver projetos e resultados',
     linkedin: 'LinkedIn',
-    statsLabel: 'Experiência em números',
+    statsLabel: 'Resultados em produtos digitais',
     stats: [
       ['7+', 'anos em produtos digitais'],
-      ['B2B', 'SaaS e ERP'],
-      ['Discovery', 'do começo ao delivery'],
-      ['Data-driven', 'decisões com evidências']
+      ['+42%', 'conversão · Broadfactor'],
+      ['+50%', 'produtividade · Unimed Uberaba'],
+      ['+35%', 'engajamento · Ubyfol'],
+      ['+30%', 'eficiência em jornadas · ConnectPlug']
     ],
-    brandLabel: 'Thalita Oliveira · level 01',
-    brandStatement: 'Design não é só interface. É decisão.',
+    levelLabel: 'NÍVEL 01',
+    createCaption: 'APERTE START PARA CRIAR',
+    brandStatement: 'Produto digital transforma estratégia em resultado.',
     paletteLabel: 'Paleta azul-marinho & Tiffany',
     questLabel: 'Design quest',
     questStatus: 'EM ANDAMENTO',
@@ -26,9 +36,9 @@ export const siteCopy = {
     questProgress: 'PROGRESSO DO PROJETO',
     openPrototype: 'Abrir protótipo',
     projectsEyebrow: 'Projetos em destaque',
-    projectsTitle: 'Estratégia que sai da ideia e chega à interface.',
+    projectsTitle: 'Projetos e resultados.',
     projectsDescription:
-      'Algumas frentes de trabalho que conectam visão de produto, experiência e execução.',
+      'Cases B2B, SaaS e ERP, da pesquisa à entrega.',
     smartFarma: {
       kicker: 'Projeto em destaque',
       title: 'SmartFarma',
@@ -38,9 +48,11 @@ export const siteCopy = {
       tags: ['UX strategy', 'Prototipagem', 'Farmácia digital', 'Atendimento']
     },
     projects: [
-      ['01', 'Plataformas B2B', 'Experiências para produtos digitais complexos, SaaS e operações de negócio.'],
-      ['02', 'Sistemas e ERP', 'Fluxos de trabalho mais claros para ferramentas com muitas regras e dados.'],
-      ['03', 'Discovery & protótipos', 'Pesquisa, hipóteses e prototipação para testar caminhos antes de escalar.']
+      ['01', 'ERP 2.0 · ConnectPlug', 'Reorganizei o ERP SaaS, atrasado há 2 anos, em entregas modulares. Redesenhei fluxos de PDV, KDS, checkout e “Meu Plano”; jornadas críticas tiveram +30% de eficiência. Também criei o CPlug Lab para capacitar e mentorar Product Owners.'],
+      ['02', 'Conta digital · Broadfactor', 'Liderei o lançamento da conta digital e de uma nova plataforma financeira. Redesenhei o site e simplifiquei formulários e jornadas com apoio de pesquisa e analytics; a conversão cresceu 42%.'],
+      ['03', 'Produtos de saúde · Unimed', 'Atuei como Product Owner e Agile Coach em OnePlantão, Totem Unimed e no app de eventos de saúde. Implementei Scrum e Kanban em times multidisciplinares; a produtividade cresceu 50%.'],
+      ['04', 'Apps e LGPD · Ubyfol', 'Conduzi a adequação à LGPD e a governança de sistemas, participei da entrega de UbyPassport e UbyCRM e automatizei processos de suporte e agendamento. O engajamento cresceu 35% e o retrabalho diminuiu.'],
+      ['05', 'Produtos corporativos · Hitss', 'Pesquisas, jornadas, protótipos e requisitos para produtos de BI e gestão de logística marítima em ambiente regulado. Projeto confidencial; resultados não divulgados.']
     ],
     projectsLink: 'Ver projetos no LinkedIn',
     prototypeEyebrow: 'Prototipação',
@@ -48,8 +60,8 @@ export const siteCopy = {
     prototypeDescription:
       'A jornada digital foi pensada para conectar clareza, confiança e eficiência no cuidado farmacêutico.',
     approachEyebrow: 'Minha abordagem',
-    approachTitle: 'Estratégia, pesquisa e interface em um fluxo contínuo.',
-    deliveryTitle: 'Do conceito ao delivery',
+    approachTitle: 'Do discovery à entrega',
+    deliveryTitle: 'Da ideia à entrega',
     deliveryEyebrow: 'Ciclo completo de produto',
     deliveryImageAlt: 'Equipe colaborando em um quadro de ideias durante uma dinâmica de produto.',
     deliveryIntro:
@@ -60,93 +72,107 @@ export const siteCopy = {
       ', traduzindo necessidades de negócio em soluções que podem ser pensadas, desenhadas e também construídas.'
     ],
     deliveryIdentity: [
-      'É essa combinação que define meu trabalho como ',
-      'Design Engineer',
-      ': não apenas desenhar a solução, mas entender como ela funciona, viabilizá-la e aproximá-la da implementação.'
+      'Essa combinação define minha atuação em ',
+      'produtos digitais e TI',
+      ': conecto estratégia, experiência e viabilidade técnica para levar soluções do problema à implementação.'
     ],
     slides: [
       {
-        eyebrow: 'UX strategy',
-        title: 'Transformo complexidade em experiências claras.',
+        eyebrow: 'Produto e estratégia',
+        title: 'Da estratégia à entrega',
         description:
-          'Ajudo marcas e produtos a tomar decisões mais certeiras, com design orientado a estratégia, pesquisa e dados.',
-        tags: ['Discovery', 'UX', 'Product Design']
+          'Atuo de ponta a ponta com discovery, pesquisa, roadmap, backlog e métricas para orientar decisões e entregas.',
+        tags: ['Product Discovery', 'Product Owner', 'Product Ops']
       },
       {
-        eyebrow: 'Product design',
-        title: 'Do problema ao produto com visão de negócio.',
+        eyebrow: 'UX e tecnologia',
+        title: 'UX para produtos complexos',
         description:
-          'Mergulho no contexto, identifico oportunidades e entrego interfaces que simplificam a jornada e aumentam clareza.',
-        tags: ['SaaS', 'B2B', 'ERP']
+          'Uno UX Research, design de produto e colaboração com engenharia em experiências B2B, SaaS e ERP.',
+        tags: ['UX/UI', 'B2B', 'SaaS e ERP']
       },
       {
-        eyebrow: 'Conteúdo',
-        title: 'Aprendo, compartilho e conecto pessoas.',
+        eyebrow: 'Ensino e comunidade',
+        title: 'Ensino, mentoria e palestras',
         description:
-          'Compartilho experiências e conhecimento prático para quem trabalha com produto digital.',
-        tags: ['YouTube', 'UX', 'Processo']
+          'Ministro aulas, conduzo mentorias e palestras sobre tecnologia, produtos digitais, UX e formas ágeis de trabalhar.',
+        tags: ['Aulas', 'Mentorias', 'Palestras']
       }
     ],
     carouselLabel: 'Navegação do carrossel',
     showSlide: 'Exibir slide',
-    servicesEyebrow: 'Como posso gerar valor',
-    servicesTitle: 'Onde posso gerar impacto.',
+    servicesEyebrow: 'Como posso contribuir',
+    servicesTitle: 'Produto, UX e formação.',
     services: [
-      ['Product Discovery', 'Pesquisa, hipóteses, jornadas e oportunidades com foco em impacto real.'],
-      ['UX Strategy', 'Estratégia de experiência conectada aos objetivos do negócio e às necessidades dos usuários.'],
-      ['Product Design', 'Fluxos, protótipos e interfaces que transformam complexidade em clareza.'],
-      ['Data-Driven UX', 'Dados e evidências para validar problemas, decisões e melhorias de experiência.']
+      ['Produto digital e Product Ops', 'Discovery, pesquisa, roadmap, backlog e métricas para orientar decisões e organizar entregas.'],
+      ['Product Design e UX', 'Estratégia, jornadas, protótipos e interfaces acessíveis para produtos digitais complexos.'],
+      ['Aulas e workshops', 'Formação prática em tecnologia, produtos digitais, UX, agilidade e ferramentas de produto.'],
+      ['Mentorias e palestras', 'Desenvolvimento de profissionais e conversas para equipes, comunidades e eventos.']
     ],
-    impactEyebrow: 'Impacto social',
-    impactTitle: 'Além do trabalho com clientes, também apoio causas e compartilho conhecimento.',
+    impactEyebrow: 'Ensino e comunidade',
+    impactTitle: 'Aulas, mentorias e palestras.',
     impactDescription:
-      'Participo de iniciativas voluntárias em ONGs e organizações sociais, além de ministrar aulas e palestras sobre design, produto e estratégia para ampliar acesso ao conhecimento e inspirar novas lideranças.',
+      'Sou Instrutora de Tecnologia. Na ConnectPlug, criei o CPlug Lab e conduzi treinamentos de discovery e testes de usabilidade; na Hitss, atuo como Multiplicadora Oficial de Conhecimento em Design. Também sou Líder de Governança voluntária na Associação Ser Mulher em Tech.',
     impactItems: [
-      ['Voluntariado', 'Atuo em ações e projetos sociais que conectam pessoas, educação e transformação comunitária.'],
-      ['Aulas e mentorias', 'Compartilho aprendizados em experiências de formação, orientação e desenvolvimento de pessoas.'],
-      ['Palestras', 'Conduzo conversa e troca de conhecimento sobre design, produto, decisões e impacto real.']
+      ['Aulas e treinamentos', 'Ensino de tecnologia e capacitação em discovery, testes de usabilidade e práticas de produto.'],
+      ['Mentorias', 'Mentoria de Product Owners no CPlug Lab e apoio a jovens profissionais. Na Ser Mulher em Tech, contribuo para estruturar uma jornada de mentoria entre diferentes níveis de carreira.'],
+      ['Palestras e workshops', 'Compartilho experiências sobre produtos digitais, UX, tecnologia e agilidade. Assista à palestra ou acesse meu canal no YouTube.'],
+      ['Voluntariado', 'Na Ser Mulher em Tech, atuo em governança corporativa, com foco em TI, infraestrutura, licenciamento, criação de processos e gestão.']
     ],
     regionEyebrow: 'Atendimento',
-    regionTitle: 'Estratégia para transformar complexidade em clareza, direção e resultado.',
+    regionTitle: 'Consultoria, ensino e tecnologia.',
     regionDescription:
-      'Atuo com founders, times e negócios que precisam tomar decisões melhores, estruturar caminhos e transformar desafios em oportunidades. Minha consultoria e mentoria conectam estratégia, experiência e visão de negócio para construir soluções mais relevantes e sustentáveis. Atendimento remoto e presencial em Uberaba/MG.',
+      'Colaboro com empresas, times, lideranças e profissionais em projetos de produtos digitais e TI, consultorias, aulas, mentorias e palestras. Atendimento remoto e presencial em Uberaba/MG.',
     regionClients: ['fundadores', 'líderes de produto', 'times de produto', 'startups', 'times de tecnologia e engenharia'],
     regionCta: 'Agendar conversa',
-    talkEyebrow: 'Bônus stage · palestra',
-    talkTitle: 'Uma conversa sobre design, produto e decisões.',
+    talkEyebrow: 'Convidada · Menina de UX',
+    talkTitle: 'Pesquisa UX com IA',
     talkDescription:
-      'Assista à palestra completa e confira as ideias, aprendizados e experiências compartilhadas por Thalita.',
-    watchTalk: 'Assistir no YouTube',
+      'Assista à conversa completa no canal Menina de UX e confira ideias e aprendizados sobre pesquisa UX com inteligência artificial.',
+    watchTalk: 'Assistir episódio no YouTube',
+    watchChannel: 'Ver canal Menina de UX',
     whatsapp: 'Chamar no WhatsApp',
     whatsappMessage: 'Oi Thalita, vim pelo seu site!',
-    talkFrameTitle: 'Palestra de Thalita Oliveira no YouTube',
+    talkFrameTitle: 'Pesquisa UX com IA no canal Menina de UX',
     footerNote: 'Feito com estratégia, criatividade e um toque pixelado.',
     themeLight: 'Modo claro',
     themeDark: 'Modo escuro',
     themeSwitchToDark: 'Ativar modo escuro',
     themeSwitchToLight: 'Ativar modo claro',
-    languageLabel: 'Idioma'
+    languageLabel: 'Idioma',
+    mobileMenuOpen: 'Abrir menu',
+    mobileMenuClose: 'Fechar menu'
   },
   en: {
     languageName: 'English',
-    nav: ['About', 'Projects', 'Services', 'Talk', 'Contact'],
-    role: 'Design Engineer',
+    pageTitle: 'Thalita Oliveira — Digital Products & IT',
+    metaDescription: 'Thalita Oliveira — Product Designer and Product Owner in digital products and IT. Projects, metrics, classes, mentoring, and talks.',
+    navigationLabel: 'Main navigation',
+    homeLabel: 'Thalita Oliveira, home',
+    mapPanelLabel: 'Map of Uberaba and remote service',
+    mapFrameTitle: 'Map of Uberaba, Minas Gerais',
+    mapLocale: 'en',
+    nav: ['About', 'Projects', 'Services', 'Talks', 'Volunteering', 'Contact'],
+    role: 'Digital Products & IT',
     headerCta: 'Let’s talk',
-    eyebrow: 'Design with strategy and clarity',
-    heroTitle: 'Design and technology for digital products that make sense.',
+    eyebrow: 'Digital products, UX, and technology',
+    heroTitle: 'Strategic digital products.',
     heroDescription:
-      'I connect user experience, business strategy, and technology to create simpler, more efficient, and scalable digital products.',
+      'I’m a Product Designer (UX/UI) and Product Owner with 7+ years of experience in B2B, SaaS, and ERP products. I connect strategy, research, design, and technology to build useful, viable, results-driven solutions.',
     servicesCta: 'Explore services',
+    projectsCta: 'Explore projects and results',
     linkedin: 'LinkedIn',
-    statsLabel: 'Experience in numbers',
+    statsLabel: 'Digital product results',
     stats: [
       ['7+', 'years in digital products'],
-      ['B2B', 'SaaS and ERP'],
-      ['Discovery', 'from start to delivery'],
-      ['Data-driven', 'evidence-based decisions']
+      ['+42%', 'conversion · Broadfactor'],
+      ['+50%', 'productivity · Unimed Uberaba'],
+      ['+35%', 'engagement · Ubyfol'],
+      ['+30%', 'journey efficiency · ConnectPlug']
     ],
-    brandLabel: 'Thalita Oliveira · level 01',
-    brandStatement: 'Design is more than interface. It is a decision.',
+    levelLabel: 'LEVEL 01',
+    createCaption: 'PRESS START TO CREATE',
+    brandStatement: 'Digital products turn strategy into results.',
     paletteLabel: 'Navy & Tiffany palette',
     questLabel: 'Design quest',
     questStatus: 'IN PROGRESS',
@@ -154,9 +180,9 @@ export const siteCopy = {
     questProgress: 'PROJECT PROGRESS',
     openPrototype: 'Open prototype',
     projectsEyebrow: 'Selected projects',
-    projectsTitle: 'Strategy that moves from idea to interface.',
+    projectsTitle: 'Projects and results.',
     projectsDescription:
-      'A few areas of work connecting product vision, user experience, and execution.',
+      'B2B, SaaS, and ERP case studies from research through delivery.',
     smartFarma: {
       kicker: 'Featured project',
       title: 'SmartFarma',
@@ -166,9 +192,11 @@ export const siteCopy = {
       tags: ['UX strategy', 'Prototyping', 'Digital pharmacy', 'Care journey']
     },
     projects: [
-      ['01', 'B2B platforms', 'Experiences for complex digital products, SaaS, and business operations.'],
-      ['02', 'Systems & ERP', 'Clearer workflows for tools with complex rules and data.'],
-      ['03', 'Discovery & prototypes', 'Research, hypotheses, and prototypes to test opportunities before scaling.']
+      ['01', 'ERP 2.0 · ConnectPlug', 'Restructured a two-year-delayed SaaS ERP into modular deliveries. Redesigned POS, KDS, checkout, and “Meu Plano” journeys; critical journeys improved efficiency by 30%. I also created CPlug Lab to train and mentor Product Owners.'],
+      ['02', 'Digital account · Broadfactor', 'Led the launch of a digital account and a new financial platform. Redesigned the website and simplified forms and journeys using research and analytics; conversion increased by 42%.'],
+      ['03', 'Healthcare products · Unimed', 'Worked as Product Owner and Agile Coach on OnePlantão, Totem Unimed, and a health-events app. Introduced Scrum and Kanban across multidisciplinary teams; productivity increased by 50%.'],
+      ['04', 'Apps & LGPD · Ubyfol', 'Led LGPD compliance and systems governance, contributed to UbyPassport and UbyCRM, and automated support and scheduling workflows. Engagement increased by 35% and operational rework decreased.'],
+      ['05', 'Enterprise products · Hitss', 'Research, journeys, prototypes, and requirements for BI and maritime logistics products in a regulated environment. Confidential project; results are not disclosed.']
     ],
     projectsLink: 'See projects on LinkedIn',
     prototypeEyebrow: 'Prototyping',
@@ -176,8 +204,8 @@ export const siteCopy = {
     prototypeDescription:
       'This digital journey was designed to combine clarity, trust, and efficiency in pharmaceutical care.',
     approachEyebrow: 'My approach',
-    approachTitle: 'Strategy, research, and interface in one continuous flow.',
-    deliveryTitle: 'From concept to delivery',
+    approachTitle: 'From discovery to delivery',
+    deliveryTitle: 'From idea to delivery',
     deliveryEyebrow: 'End-to-end product work',
     deliveryImageAlt: 'Product team collaborating around an idea board during a workshop.',
     deliveryIntro:
@@ -188,93 +216,107 @@ export const siteCopy = {
       ', translating business needs into solutions that can be considered, designed, and built.'
     ],
     deliveryIdentity: [
-      'That combination defines my work as a ',
-      'Design Engineer',
-      ': not just designing the solution, but understanding how it works, making it viable, and bringing it closer to implementation.'
+      'That combination defines my work across ',
+      'digital products and IT',
+      ': I connect strategy, experience, and technical feasibility to take solutions from problem framing through implementation.'
     ],
     slides: [
       {
-        eyebrow: 'UX strategy',
-        title: 'I turn complexity into clear experiences.',
+        eyebrow: 'Product and strategy',
+        title: 'Strategy through delivery',
         description:
-          'I help brands and products make better decisions through strategy-, research-, and data-informed design.',
-        tags: ['Discovery', 'UX', 'Product Design']
+          'I work across discovery, research, roadmaps, backlogs, and metrics to guide product decisions and delivery.',
+        tags: ['Product Discovery', 'Product Owner', 'Product Ops']
       },
       {
-        eyebrow: 'Product design',
-        title: 'From problem to product with a business mindset.',
+        eyebrow: 'UX and technology',
+        title: 'UX for complex products',
         description:
-          'I explore context, identify opportunities, and design interfaces that simplify journeys and bring clarity.',
-        tags: ['SaaS', 'B2B', 'ERP']
+          'I bring UX research, product design, and engineering collaboration to B2B, SaaS, and ERP experiences.',
+        tags: ['UX/UI', 'B2B', 'SaaS and ERP']
       },
       {
-        eyebrow: 'Content',
-        title: 'Learning, sharing, and connecting people.',
+        eyebrow: 'Teaching and community',
+        title: 'Teaching, mentoring, and talks',
         description:
-          'I share hands-on experience and practical knowledge for people working in digital products.',
-        tags: ['YouTube', 'UX', 'Process']
+          'I teach classes, mentor professionals, and speak about technology, digital products, UX, and agile ways of working.',
+        tags: ['Classes', 'Mentoring', 'Talks']
       }
     ],
     carouselLabel: 'Carousel navigation',
     showSlide: 'Show slide',
-    servicesEyebrow: 'How I create value',
-    servicesTitle: 'Where I can make an impact.',
+    servicesEyebrow: 'How I can contribute',
+    servicesTitle: 'Product, UX, and learning.',
     services: [
-      ['Product Discovery', 'Research, hypotheses, journeys, and opportunities focused on real impact.'],
-      ['UX Strategy', 'Experience strategy connected to business goals and user needs.'],
-      ['Product Design', 'Flows, prototypes, and interfaces that turn complexity into clarity.'],
-      ['Data-Driven UX', 'Data and evidence to validate problems, decisions, and experience improvements.']
+      ['Digital Product & Product Ops', 'Discovery, research, roadmaps, backlogs, and metrics to guide decisions and delivery.'],
+      ['Product Design & UX', 'Strategy, journeys, prototypes, and accessible interfaces for complex digital products.'],
+      ['Classes & workshops', 'Practical learning in technology, digital products, UX, agile methods, and product tools.'],
+      ['Mentoring & talks', 'Professional development and engaging sessions for teams, communities, and events.']
     ],
-    impactEyebrow: 'Social impact',
-    impactTitle: 'Beyond client work, I also support meaningful causes and share knowledge.',
+    impactEyebrow: 'Teaching and community',
+    impactTitle: 'Classes, mentoring, and talks.',
     impactDescription:
-      'I take part in volunteer initiatives with NGOs and social organizations, and I also teach and speak about design, product, and strategy to expand access to knowledge and inspire future leaders.',
+      'I’m a technology instructor. At ConnectPlug, I created CPlug Lab and led training in discovery and usability testing; at Hitss, I’m an Official Design Knowledge Multiplier. I also volunteer as Governance Lead at Associação Ser Mulher em Tech.',
     impactItems: [
-      ['Volunteering', 'I support projects and actions that connect people, education, and community transformation.'],
-      ['Classes and mentoring', 'I share practical lessons through training, guidance, and professional development.'],
-      ['Talks', 'I lead conversations on design, product decisions, and real-world impact.']
+      ['Classes and training', 'Technology education and training in discovery, usability testing, and product practices.'],
+      ['Mentoring', 'Mentored Product Owners through CPlug Lab and supported early-career professionals. At Ser Mulher em Tech, I help shape a mentoring journey across career levels.'],
+      ['Talks and workshops', 'I share practical experience in digital products, UX, technology, and agile methods. Watch my talk or visit my YouTube channel.'],
+      ['Volunteering', 'At Ser Mulher em Tech, I work in corporate governance, focusing on IT, infrastructure, licensing, process creation, and management.']
     ],
     regionEyebrow: 'Work model',
-    regionTitle: 'Remote work with local presence in Uberaba.',
+    regionTitle: 'Consulting, teaching, and technology.',
     regionDescription:
-      'I work with clients remotely and also in Uberaba/MG, offering consulting and mentoring for teams, founders, and businesses that need clearer strategy and better-designed experiences.',
+      'I work with businesses, teams, leaders, and professionals on digital product and IT projects, consulting, classes, mentoring, and talks. Available remotely and in person in Uberaba, Brazil.',
     regionClients: ['founders', 'product leaders', 'product teams', 'startups', 'technology and engineering teams'],
     regionCta: 'Book a call',
-    talkEyebrow: 'Bonus stage · talk',
-    talkTitle: 'A conversation about design, products, and decisions.',
+    talkEyebrow: 'Guest talk · Menina de UX',
+    talkTitle: 'UX Research with AI',
     talkDescription:
-      'Watch the full talk and explore the ideas, lessons, and experiences shared by Thalita.',
-    watchTalk: 'Watch on YouTube',
+      'Watch the full conversation on the Menina de UX channel for ideas and insights on AI in UX research.',
+    watchTalk: 'Watch the episode on YouTube',
+    watchChannel: 'Visit Menina de UX',
     whatsapp: 'Message me on WhatsApp',
     whatsappMessage: 'Hi Thalita, I found your website!',
-    talkFrameTitle: 'Thalita Oliveira’s talk on YouTube',
+    talkFrameTitle: 'UX Research with AI on the Menina de UX channel',
     footerNote: 'Made with strategy, creativity, and a pixelated touch.',
     themeLight: 'Light mode',
     themeDark: 'Dark mode',
     themeSwitchToDark: 'Turn on dark mode',
     themeSwitchToLight: 'Turn on light mode',
-    languageLabel: 'Language'
+    languageLabel: 'Language',
+    mobileMenuOpen: 'Open navigation menu',
+    mobileMenuClose: 'Close navigation menu'
   },
   es: {
     languageName: 'Español',
-    nav: ['Sobre mí', 'Proyectos', 'Servicios', 'Charla', 'Contacto'],
-    role: 'Design Engineer',
+    pageTitle: 'Thalita Oliveira — Productos Digitales y TI',
+    metaDescription: 'Thalita Oliveira — Product Designer y Product Owner en productos digitales y TI. Proyectos, métricas, clases, mentorías y charlas.',
+    navigationLabel: 'Navegación principal',
+    homeLabel: 'Thalita Oliveira, inicio',
+    mapPanelLabel: 'Mapa de Uberaba y atención remota',
+    mapFrameTitle: 'Mapa de Uberaba, Minas Gerais',
+    mapLocale: 'es',
+    nav: ['Sobre mí', 'Proyectos', 'Servicios', 'Charlas', 'Voluntariado', 'Contacto'],
+    role: 'Productos Digitales y TI',
     headerCta: 'Hablemos',
-    eyebrow: 'Diseño con estrategia y claridad',
-    heroTitle: 'Diseño y tecnología para crear productos digitales con sentido.',
+    eyebrow: 'Producto digital, UX y tecnología',
+    heroTitle: 'Productos digitales con estrategia.',
     heroDescription:
-      'Conecto experiencia de usuario, estrategia de negocio y tecnología para crear productos digitales más simples, eficientes y escalables.',
+      'Soy Product Designer (UX/UI) y Product Owner, con más de 7 años de experiencia en productos B2B, SaaS y ERP. Conecto estrategia, investigación, diseño y tecnología para crear soluciones útiles, viables y orientadas a resultados.',
     servicesCta: 'Ver servicios',
+    projectsCta: 'Ver proyectos y resultados',
     linkedin: 'LinkedIn',
-    statsLabel: 'Experiencia en números',
+    statsLabel: 'Resultados en productos digitales',
     stats: [
       ['7+', 'años en productos digitales'],
-      ['B2B', 'SaaS y ERP'],
-      ['Discovery', 'del inicio a la entrega'],
-      ['Data-driven', 'decisiones basadas en evidencia']
+      ['+42%', 'conversión · Broadfactor'],
+      ['+50%', 'productividad · Unimed Uberaba'],
+      ['+35%', 'engagement · Ubyfol'],
+      ['+30%', 'eficiencia · ConnectPlug']
     ],
-    brandLabel: 'Thalita Oliveira · nivel 01',
-    brandStatement: 'Diseño es más que interfaz. Es una decisión.',
+    levelLabel: 'NIVEL 01',
+    createCaption: 'PRESIONA START PARA CREAR',
+    brandStatement: 'Los productos digitales convierten estrategia en resultados.',
     paletteLabel: 'Paleta azul marino y Tiffany',
     questLabel: 'Misión de diseño',
     questStatus: 'EN CURSO',
@@ -282,9 +324,9 @@ export const siteCopy = {
     questProgress: 'PROGRESO DEL PROYECTO',
     openPrototype: 'Abrir prototipo',
     projectsEyebrow: 'Proyectos destacados',
-    projectsTitle: 'Estrategia que pasa de la idea a la interfaz.',
+    projectsTitle: 'Proyectos y resultados.',
     projectsDescription:
-      'Algunas áreas de trabajo que conectan visión de producto, experiencia y ejecución.',
+      'Casos B2B, SaaS y ERP desde la investigación hasta la entrega.',
     smartFarma: {
       kicker: 'Proyecto destacado',
       title: 'SmartFarma',
@@ -294,9 +336,11 @@ export const siteCopy = {
       tags: ['UX strategy', 'Prototipado', 'Farmacia digital', 'Atención']
     },
     projects: [
-      ['01', 'Plataformas B2B', 'Experiencias para productos digitales complejos, SaaS y operaciones de negocio.'],
-      ['02', 'Sistemas y ERP', 'Flujos más claros para herramientas con reglas y datos complejos.'],
-      ['03', 'Discovery y prototipos', 'Investigación, hipótesis y prototipos para validar oportunidades antes de escalar.']
+      ['01', 'ERP 2.0 · ConnectPlug', 'Reorganicé en módulos un ERP SaaS con dos años de retraso. Rediseñé recorridos de punto de venta, KDS, checkout y “Meu Plano”; los recorridos críticos mejoraron su eficiencia en un 30%. También creé CPlug Lab para formar y acompañar a Product Owners.'],
+      ['02', 'Cuenta digital · Broadfactor', 'Lideré el lanzamiento de una cuenta digital y una nueva plataforma financiera. Rediseñé el sitio y simplifiqué formularios y recorridos con investigación y analytics; la conversión aumentó un 42%.'],
+      ['03', 'Productos de salud · Unimed', 'Trabajé como Product Owner y Agile Coach en OnePlantão, Totem Unimed y una app de eventos de salud. Implementé Scrum y Kanban en equipos multidisciplinarios; la productividad aumentó un 50%.'],
+      ['04', 'Apps y LGPD · Ubyfol', 'Lideré la adecuación a la LGPD y la gobernanza de sistemas, participé en UbyPassport y UbyCRM y automaticé procesos de soporte y agendamiento. El engagement aumentó un 35% y se redujo el retrabajo.'],
+      ['05', 'Productos corporativos · Hitss', 'Investigación, recorridos, prototipos y requisitos para productos de BI y gestión de logística marítima en un entorno regulado. Proyecto confidencial; resultados no divulgados.']
     ],
     projectsLink: 'Ver proyectos en LinkedIn',
     prototypeEyebrow: 'Prototipado',
@@ -304,8 +348,8 @@ export const siteCopy = {
     prototypeDescription:
       'El recorrido digital fue pensado para conectar claridad, confianza y eficiencia en el cuidado farmacéutico.',
     approachEyebrow: 'Mi enfoque',
-    approachTitle: 'Estrategia, investigación e interfaz en un flujo continuo.',
-    deliveryTitle: 'Del concepto a la entrega',
+    approachTitle: 'Del discovery a la entrega',
+    deliveryTitle: 'De la idea a la entrega',
     deliveryEyebrow: 'Ciclo completo de producto',
     deliveryImageAlt: 'Equipo colaborando frente a un panel de ideas durante un taller de producto.',
     deliveryIntro:
@@ -316,72 +360,76 @@ export const siteCopy = {
       ', traduciendo las necesidades del negocio en soluciones que pueden pensarse, diseñarse y construirse.'
     ],
     deliveryIdentity: [
-      'Esa combinación define mi trabajo como ',
-      'Design Engineer',
-      ': no solo diseño la solución, también entiendo cómo funciona, cómo hacerla viable y cómo acercarla a la implementación.'
+      'Esa combinación define mi trabajo en ',
+      'productos digitales y TI',
+      ': conecto estrategia, experiencia y viabilidad técnica para llevar soluciones desde el problema hasta la implementación.'
     ],
     slides: [
       {
-        eyebrow: 'UX strategy',
-        title: 'Transformo la complejidad en experiencias claras.',
+        eyebrow: 'Producto y estrategia',
+        title: 'De la estrategia a la entrega',
         description:
-          'Ayudo a marcas y productos a tomar mejores decisiones con diseño basado en estrategia, investigación y datos.',
-        tags: ['Discovery', 'UX', 'Product Design']
+          'Trabajo en discovery, investigación, roadmaps, backlogs y métricas para orientar decisiones y entregas.',
+        tags: ['Product Discovery', 'Product Owner', 'Product Ops']
       },
       {
-        eyebrow: 'Product design',
-        title: 'Del problema al producto con visión de negocio.',
+        eyebrow: 'UX y tecnología',
+        title: 'UX para productos complejos',
         description:
-          'Investigo el contexto, identifico oportunidades y diseño interfaces que simplifican el recorrido y aportan claridad.',
-        tags: ['SaaS', 'B2B', 'ERP']
+          'Uno UX Research, diseño de producto y colaboración con ingeniería en experiencias B2B, SaaS y ERP.',
+        tags: ['UX/UI', 'B2B', 'SaaS y ERP']
       },
       {
-        eyebrow: 'Contenido',
-        title: 'Aprendo, comparto y conecto personas.',
+        eyebrow: 'Enseñanza y comunidad',
+        title: 'Enseñanza, mentoría y charlas',
         description:
-          'Comparto experiencias y conocimiento práctico para quienes trabajan con productos digitales.',
-        tags: ['YouTube', 'UX', 'Proceso']
+          'Imparto clases, acompaño a profesionales y doy charlas sobre tecnología, productos digitales, UX y formas ágiles de trabajo.',
+        tags: ['Clases', 'Mentorías', 'Charlas']
       }
     ],
     carouselLabel: 'Navegación del carrusel',
     showSlide: 'Mostrar diapositiva',
-    servicesEyebrow: 'Cómo puedo generar valor',
-    servicesTitle: 'Dónde puedo generar impacto.',
+    servicesEyebrow: 'Cómo puedo contribuir',
+    servicesTitle: 'Producto, UX y formación.',
     services: [
-      ['Product Discovery', 'Investigación, hipótesis, recorridos y oportunidades con impacto real.'],
-      ['UX Strategy', 'Estrategia de experiencia conectada con los objetivos del negocio y las necesidades del usuario.'],
-      ['Product Design', 'Flujos, prototipos e interfaces que transforman la complejidad en claridad.'],
-      ['Data-Driven UX', 'Datos y evidencia para validar problemas, decisiones y mejoras de experiencia.']
+      ['Producto digital y Product Ops', 'Discovery, investigación, roadmap, backlog y métricas para orientar decisiones y entregas.'],
+      ['Product Design y UX', 'Estrategia, recorridos, prototipos e interfaces accesibles para productos digitales complejos.'],
+      ['Clases y talleres', 'Formación práctica en tecnología, productos digitales, UX, agilidad y herramientas de producto.'],
+      ['Mentorías y charlas', 'Desarrollo profesional y sesiones para equipos, comunidades y eventos.']
     ],
-    impactEyebrow: 'Impacto social',
-    impactTitle: 'Además del trabajo con clientes, también apoyo causas y comparto conocimiento.',
+    impactEyebrow: 'Enseñanza y comunidad',
+    impactTitle: 'Clases, mentorías y charlas.',
     impactDescription:
-      'Participo en iniciativas voluntarias con ONGs y organizaciones sociales, y también imparto clases y conferencias sobre diseño, producto y estrategia para ampliar el acceso al conocimiento e inspirar nuevas liderazgos.',
+      'Soy instructora de tecnología. En ConnectPlug, creé CPlug Lab e impartí formación en discovery y pruebas de usabilidad; en Hitss, soy Multiplicadora Oficial de Conocimiento en Diseño. También soy voluntaria y Líder de Gobernanza en Associação Ser Mulher em Tech.',
     impactItems: [
-      ['Voluntariado', 'Aporto en proyectos y acciones que conectan personas, educación y transformación comunitaria.'],
-      ['Clases y mentoría', 'Comparto aprendizajes a través de formación, orientación y desarrollo de personas.'],
-      ['Charlas', 'Dirijo conversaciones sobre diseño, producto, decisiones y impacto real.']
+      ['Clases y formación', 'Enseñanza de tecnología y formación en discovery, pruebas de usabilidad y prácticas de producto.'],
+      ['Mentorías', 'Mentoría para Product Owners en CPlug Lab y apoyo a profesionales que inician su carrera. En Ser Mulher em Tech, contribuyo a estructurar una ruta de mentoría entre distintos niveles profesionales.'],
+      ['Charlas y talleres', 'Comparto experiencias sobre productos digitales, UX, tecnología y agilidad. Mira la charla o visita mi canal de YouTube.'],
+      ['Voluntariado', 'En Ser Mulher em Tech, trabajo en gobernanza corporativa, con énfasis en TI, infraestructura, licenciamiento, creación de procesos y gestión.']
     ],
     regionEyebrow: 'Atención',
-    regionTitle: 'Trabajo remoto y también con presencia en Uberaba.',
+    regionTitle: 'Consultoría, enseñanza y tecnología.',
     regionDescription:
-      'Atiendo clientes de forma remota y también en Uberaba/MG, con consultoría y mentoría para equipos, fundadores y negocios que necesitan más claridad, estrategia y experiencias mejor pensadas.',
+      'Colaboro con empresas, equipos, líderes y profesionales en proyectos de productos digitales y TI, consultoría, clases, mentorías y charlas. Disponible en remoto y de forma presencial en Uberaba, Brasil.',
     regionClients: ['fundadores', 'líderes de producto', 'equipos de producto', 'startups', 'equipos de tecnología e ingeniería'],
     regionCta: 'Agendar conversación',
-    talkEyebrow: 'Bonus stage · charla',
-    talkTitle: 'Una conversación sobre diseño, producto y decisiones.',
+    talkEyebrow: 'Invitada · Menina de UX',
+    talkTitle: 'Investigación UX con IA',
     talkDescription:
-      'Mira la charla completa y descubre las ideas, aprendizajes y experiencias que comparte Thalita.',
-    watchTalk: 'Ver en YouTube',
+      'Mira la conversación completa en el canal Menina de UX y descubre ideas sobre investigación UX con inteligencia artificial.',
+    watchTalk: 'Ver el episodio en YouTube',
+    watchChannel: 'Ver canal Menina de UX',
     whatsapp: 'Escríbeme por WhatsApp',
     whatsappMessage: 'Hola Thalita, encontré tu sitio web.',
-    talkFrameTitle: 'Charla de Thalita Oliveira en YouTube',
+    talkFrameTitle: 'Investigación UX con IA en el canal Menina de UX',
     footerNote: 'Hecho con estrategia, creatividad y un toque pixelado.',
     themeLight: 'Modo claro',
     themeDark: 'Modo oscuro',
     themeSwitchToDark: 'Activar modo oscuro',
     themeSwitchToLight: 'Activar modo claro',
-    languageLabel: 'Idioma'
+    languageLabel: 'Idioma',
+    mobileMenuOpen: 'Abrir menú',
+    mobileMenuClose: 'Cerrar menú'
   }
 }
 

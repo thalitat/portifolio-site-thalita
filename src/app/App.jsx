@@ -14,7 +14,11 @@ function App() {
   useEffect(() => {
     document.documentElement.dataset.theme = isDark ? 'dark' : 'light'
     document.documentElement.lang = language === 'pt' ? 'pt-BR' : language
-  }, [isDark, language])
+    document.title = copy.pageTitle
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute('content', copy.metaDescription)
+  }, [isDark, language, copy.pageTitle, copy.metaDescription])
 
   return (
     <HomePage
