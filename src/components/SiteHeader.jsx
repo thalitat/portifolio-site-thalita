@@ -7,15 +7,20 @@ const languageOptions = [
   { code: 'es', label: 'Español', shortLabel: 'ES' }
 ]
 
-function SiteHeader({ copy, language, setLanguage, isDark, setIsDark }) {
+const pageSlugs = ['sobre', 'projetos', 'servicos', 'palestras', 'voluntariado', 'contato']
+
+function SiteHeader({ copy, language, setLanguage, isDark, setIsDark, page }) {
   const languagePickerRef = useRef(null)
   const mobileNavButtonRef = useRef(null)
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
   const selectedLanguage = languageOptions.find((option) => option.code === language)
 
+  const pageHref = (slug) =>
+    `${import.meta.env.BASE_URL}${slug === 'sobre' ? '' : `${slug}/`}?lang=${language}`
+
   return (
     <header className="topbar">
-      <a className="brand-wrap" href="#sobre" aria-label={copy.homeLabel}>
+      <a className="brand-wrap" href={pageHref('sobre')} aria-label={copy.homeLabel}>
         <span className="brand-mark" aria-hidden="true">TO</span>
         <span className="brand-text">
           <span className="brand-name">Thalita Oliveira</span>
@@ -35,12 +40,20 @@ function SiteHeader({ copy, language, setLanguage, isDark, setIsDark }) {
         }}
       >
         <ul>
-          <li><a href="#sobre" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[0]}</a></li>
-          <li><a href="#projetos" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[1]}</a></li>
-          <li><a href="#servicos" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[2]}</a></li>
-          <li><a href="#palestra" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[3]}</a></li>
-          <li><a href="#impacto" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[4]}</a></li>
-          <li><a href="#contato" onClick={() => setIsMobileNavOpen(false)}>{copy.nav[5]}</a></li>
+          {copy.nav.map((label, index) => {
+            const slug = pageSlugs[index]
+            return (
+              <li key={slug}>
+                <a
+                  href={pageHref(slug)}
+                  aria-current={page === slug ? 'page' : undefined}
+                  onClick={() => setIsMobileNavOpen(false)}
+                >
+                  {label}
+                </a>
+              </li>
+            )
+          })}
         </ul>
       </nav>
 

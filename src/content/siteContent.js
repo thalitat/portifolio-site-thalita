@@ -1,6 +1,17 @@
 export const siteCopy = {
   pt: {
     languageName: 'Português',
+    pageTitles: {
+      sobre: 'Thalita Oliveira — Produtos Digitais & TI',
+      projetos: 'Projetos e resultados — Thalita Oliveira',
+      servicos: 'Serviços — Thalita Oliveira',
+      palestras: 'Palestras — Thalita Oliveira',
+      voluntariado: 'Voluntariado — Thalita Oliveira',
+      contato: 'Contato — Thalita Oliveira'
+    },
+    notFoundTitle: 'Página não encontrada',
+    notFoundMessage: 'O endereço acessado não corresponde a uma página do portfólio.',
+    backHome: 'Voltar ao início',
     pageTitle: 'Thalita Oliveira — Produtos Digitais & TI',
     metaDescription: 'Thalita Oliveira — Product Designer e Product Owner em produtos digitais e TI. Projetos, métricas, aulas, mentorias e palestras.',
     navigationLabel: 'Navegação principal',
@@ -145,6 +156,17 @@ export const siteCopy = {
   },
   en: {
     languageName: 'English',
+    pageTitles: {
+      sobre: 'Thalita Oliveira — Digital Products & IT',
+      projetos: 'Projects and results — Thalita Oliveira',
+      servicos: 'Services — Thalita Oliveira',
+      palestras: 'Talks — Thalita Oliveira',
+      voluntariado: 'Volunteering — Thalita Oliveira',
+      contato: 'Contact — Thalita Oliveira'
+    },
+    notFoundTitle: 'Page not found',
+    notFoundMessage: 'The address does not match a page in this portfolio.',
+    backHome: 'Back to home',
     pageTitle: 'Thalita Oliveira — Digital Products & IT',
     metaDescription: 'Thalita Oliveira — Product Designer and Product Owner in digital products and IT. Projects, metrics, classes, mentoring, and talks.',
     navigationLabel: 'Main navigation',
@@ -289,6 +311,17 @@ export const siteCopy = {
   },
   es: {
     languageName: 'Español',
+    pageTitles: {
+      sobre: 'Thalita Oliveira — Productos Digitales y TI',
+      projetos: 'Proyectos y resultados — Thalita Oliveira',
+      servicos: 'Servicios — Thalita Oliveira',
+      palestras: 'Charlas — Thalita Oliveira',
+      voluntariado: 'Voluntariado — Thalita Oliveira',
+      contato: 'Contacto — Thalita Oliveira'
+    },
+    notFoundTitle: 'Página no encontrada',
+    notFoundMessage: 'La dirección no corresponde a una página de este portafolio.',
+    backHome: 'Volver al inicio',
     pageTitle: 'Thalita Oliveira — Productos Digitales y TI',
     metaDescription: 'Thalita Oliveira — Product Designer y Product Owner en productos digitales y TI. Proyectos, métricas, clases, mentorías y charlas.',
     navigationLabel: 'Navegación principal',

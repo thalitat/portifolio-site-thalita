@@ -1,14 +1,17 @@
-# Thalita Oliveira | Design Engineer
+# Thalita Oliveira | Produtos Digitais & TI
 
-Portfolio profissional de Thalita Oliveira, apresentando trabalho de produto digital da estratégia à implementação. O site é responsivo e oferece conteúdo em português, inglês e espanhol, além de temas claro e escuro.
+Portfólio profissional de Thalita Oliveira, Product Designer (UX/UI) e Product Owner com mais de 7 anos de experiência em produtos digitais B2B, SaaS e ERP. Apresenta projetos, métricas, aulas, mentorias e palestras. O site é responsivo, oferece conteúdo em português, inglês e espanhol e conta com temas claro e escuro.
 
-## O site
+## Páginas
 
-- Projetos e frentes de atuação em UX, plataformas B2B e sistemas ERP.
-- Protótipo navegável SmartFarma incorporado à página.
-- Abordagem, serviços, impacto social e modelo de atendimento remoto e presencial em Uberaba/MG.
-- Palestra incorporada do YouTube, mapa e contato por WhatsApp.
-- Seção sobre o ciclo de produto, da ideação ao delivery.
+- `/` — Sobre, métricas e abordagem de produto.
+- `/projetos/` — Cases, resultados e protótipo SmartFarma.
+- `/servicos/` — Serviços de produto digital, UX e formação.
+- `/palestras/` — Palestra incorporada do YouTube.
+- `/voluntariado/` — Aulas, mentorias e atuação na comunidade.
+- `/contato/` — Atendimento, localização e contato por WhatsApp.
+
+Todas as páginas estão disponíveis em português, inglês e espanhol pelo seletor de idioma.
 
 ## Tecnologias
 
@@ -63,11 +66,16 @@ src/
 	components/          Cabeçalho, rodapé, idioma e contato
 	content/             Textos em português, inglês e espanhol
 	hooks/               Comportamentos reutilizáveis
-	pages/               Composição da página principal
-	sections/            Seções agrupadas por área de conteúdo
+	pages/               Composição compartilhada das páginas
+	sections/            Conteúdo independente de cada página
 	styles/              Estilos globais e da interface
 	main.jsx              Inicialização do React
 index.html              Documento de entrada do Vite
+projetos/index.html     Entrada estática da página de projetos
+servicos/index.html     Entrada estática da página de serviços
+palestras/index.html    Entrada estática da página de palestras
+voluntariado/index.html Entrada estática da página de voluntariado
+contato/index.html      Entrada estática da página de contato
 package.json            Dependências e scripts
 vite.config.js          Configuração do Vite
 ```

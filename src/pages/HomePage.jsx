@@ -2,11 +2,28 @@ import SiteFooter from '../components/SiteFooter'
 import SiteHeader from '../components/SiteHeader'
 import WhatsAppButton from '../components/WhatsAppButton'
 import ApproachAndDelivery from '../sections/ApproachAndDelivery'
-import HeroAndProjects from '../sections/HeroAndProjects'
-import LocationAndTalk from '../sections/LocationAndTalk'
-import ServicesAndImpact from '../sections/ServicesAndImpact'
+import ContactContent from '../sections/ContactContent'
+import HeroAndMetrics from '../sections/HeroAndMetrics'
+import ProjectsContent from '../sections/ProjectsContent'
+import ServicesContent from '../sections/ServicesContent'
+import TalkContent from '../sections/TalkContent'
+import VolunteerContent from '../sections/VolunteerContent'
 
-function HomePage({ copy, language, setLanguage, isDark, setIsDark }) {
+function HomePage({ copy, language, setLanguage, isDark, setIsDark, page }) {
+  const pageContent = {
+    sobre: (
+      <>
+        <HeroAndMetrics copy={copy} language={language} />
+        <ApproachAndDelivery copy={copy} />
+      </>
+    ),
+    projetos: <ProjectsContent copy={copy} />,
+    servicos: <ServicesContent copy={copy} />,
+    palestras: <TalkContent copy={copy} />,
+    voluntariado: <VolunteerContent copy={copy} />,
+    contato: <ContactContent copy={copy} />
+  }
+
   return (
     <div className="page-shell">
       <SiteHeader
@@ -15,13 +32,19 @@ function HomePage({ copy, language, setLanguage, isDark, setIsDark }) {
         setLanguage={setLanguage}
         isDark={isDark}
         setIsDark={setIsDark}
+        page={page}
       />
 
-      <main>
-        <HeroAndProjects copy={copy} />
-        <ApproachAndDelivery copy={copy} />
-        <ServicesAndImpact copy={copy} />
-        <LocationAndTalk copy={copy} />
+      <main id="main-content">
+        {pageContent[page] || (
+          <section className="section-band band-ice not-found-section">
+            <h1>{copy.notFoundTitle}</h1>
+            <p>{copy.notFoundMessage}</p>
+            <a className="primary-btn" href={`${import.meta.env.BASE_URL}?lang=${language}`}>
+              {copy.backHome}
+            </a>
+          </section>
+        )}
       </main>
 
       <SiteFooter copy={copy} />

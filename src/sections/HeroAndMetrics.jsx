@@ -1,10 +1,6 @@
-const smartFarmaPrototypeUrl =
-  'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkUatamJMdBu6BE3JfWM34H%2FSmartFarma%3Fnode-id%3D6-70%26p%3Df%26viewport%3D377%252C1003%252C0.31%26t%3Dkf99q8Udn8zsFCDb-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1'
 const palette = ['#071B33', '#102B49', '#18C6C3', '#A7F3E9', '#F5F8FA']
 
-function HeroAndProjects({ copy }) {
-  const featuredProject = copy.smartFarma
-
+function HeroAndMetrics({ copy, language }) {
   return (
     <>
       <section className="hero-section hero-color-band" id="sobre">
@@ -14,7 +10,9 @@ function HeroAndProjects({ copy }) {
           <p className="lead">{copy.heroDescription}</p>
 
           <div className="hero-actions">
-            <a className="primary-btn" href="#projetos">{copy.projectsCta}</a>
+            <a className="primary-btn" href={`${import.meta.env.BASE_URL}projetos/?lang=${language}`}>
+              {copy.projectsCta}
+            </a>
             <a
               className="ghost-btn"
               href="https://www.linkedin.com/in/thalitaosb/"
@@ -101,64 +99,8 @@ function HeroAndProjects({ copy }) {
           ))}
         </div>
       </section>
-
-      <section className="projects-section section-band band-ice" id="projetos">
-        <div className="section-heading projects-heading">
-          <div>
-            <p className="eyebrow">{copy.projectsEyebrow}</p>
-            <h2>{copy.projectsTitle}</h2>
-          </div>
-          <p className="projects-intro">{copy.projectsDescription}</p>
-        </div>
-        <div className="projects-grid">
-          {copy.projects.map(([index, title, description, href]) => (
-            <article className="project-card motion-card motion-hover" key={title}>
-              <span className="project-index">{index}</span>
-              <div className="project-pixels" aria-hidden="true">
-                <span />
-                <span />
-                <span />
-              </div>
-              <h3>{title}</h3>
-              <p>{description}</p>
-              {href && (
-                <a className="project-link" href={href} target="_blank" rel="noreferrer">
-                  {copy.openPrototype} <span aria-hidden="true">↗</span>
-                </a>
-              )}
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {featuredProject && (
-        <section
-          className="smartfarma-section section-band band-paper"
-          aria-labelledby="smartfarma-title"
-        >
-          <div className="smartfarma-heading">
-            <p className="eyebrow">{featuredProject.kicker}</p>
-            <h2 id="smartfarma-title">{featuredProject.title}</h2>
-            <p>{featuredProject.description}</p>
-            <p className="smartfarma-note">{featuredProject.note}</p>
-            <div className="tag-list">
-              {featuredProject.tags.map((tag) => <span key={tag}>{tag}</span>)}
-            </div>
-          </div>
-
-          <div className="prototype-frame motion-card">
-            <iframe
-              src={smartFarmaPrototypeUrl}
-              title={`${featuredProject.title} - protótipo navegável`}
-              allow="fullscreen; clipboard-read; clipboard-write"
-              allowFullScreen
-              loading="lazy"
-            />
-          </div>
-        </section>
-      )}
     </>
   )
 }
 
-export default HeroAndProjects
+export default HeroAndMetrics
