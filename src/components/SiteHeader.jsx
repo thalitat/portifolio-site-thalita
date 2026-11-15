@@ -7,7 +7,7 @@ const languageOptions = [
   { code: 'es', label: 'Español', shortLabel: 'ES' }
 ]
 
-const pageSlugs = ['sobre', 'projetos', 'servicos', 'palestras', 'voluntariado', 'contato']
+const pageSlugs = ['sobre', 'projetos', 'servicos', 'palestras', 'educacional', 'contato']
 
 function SiteHeader({ copy, language, setLanguage, isDark, setIsDark, page }) {
   const languagePickerRef = useRef(null)

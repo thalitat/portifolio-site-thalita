@@ -937,14 +937,13 @@
   gap: 28px;
   align-items: center;
   padding-top: 48px;
-  opacity: 0;
-  transform: translateY(14px);
   transition: opacity 550ms ease, transform 550ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 .smartfarma-section.is-visible {
   opacity: 1;
   transform: translateY(0);
+  animation: motion-card-reveal 550ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
 .smartfarma-heading {
@@ -1534,8 +1533,6 @@
 }
 
 .motion-card {
-  opacity: 0;
-  transform: translateY(10px);
   transition:
     opacity 500ms ease,
     transform 500ms cubic-bezier(0.2, 0.7, 0.2, 1),
@@ -1546,15 +1543,28 @@
 .motion-card.is-visible {
   opacity: 1;
   transform: translateY(0);
+  animation: motion-card-reveal 500ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.motion-card.is-visible:hover {
+.motion-card:hover {
   border-color: var(--tiffany);
 }
 
-.motion-hover.is-visible:hover {
+.motion-hover:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(7, 27, 51, 0.08);
+}
+
+@keyframes motion-card-reveal {
+  from {
+    opacity: 0.72;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .footer-note {

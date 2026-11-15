@@ -8,10 +8,11 @@ Portfólio profissional de Thalita Oliveira, Product Designer (UX/UI) e Product 
 - `/projetos/` — Cases, resultados e protótipo SmartFarma.
 - `/servicos/` — Serviços de produto digital, UX e formação.
 - `/palestras/` — Palestra incorporada do YouTube.
-- `/voluntariado/` — Aulas, mentorias e atuação na comunidade.
+- `/educacional/` — Aulas, mentorias, palestras e atuação na comunidade.
 - `/contato/` — Atendimento, localização e contato por WhatsApp.
 
 Todas as páginas estão disponíveis em português, inglês e espanhol pelo seletor de idioma.
+O endereço antigo `/voluntariado/` redireciona para `/educacional/`.
 
 ## Tecnologias
 
@@ -74,7 +75,7 @@ index.html              Documento de entrada do Vite
 projetos/index.html     Entrada estática da página de projetos
 servicos/index.html     Entrada estática da página de serviços
 palestras/index.html    Entrada estática da página de palestras
-voluntariado/index.html Entrada estática da página de voluntariado
+educacional/index.html  Entrada estática da página educacional
 contato/index.html      Entrada estática da página de contato
 package.json            Dependências e scripts
 vite.config.js          Configuração do Vite

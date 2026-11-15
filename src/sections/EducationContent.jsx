@@ -1,4 +1,4 @@
-function VolunteerContent({ copy }) {
+function EducationContent({ copy }) {
   return (
     <section className="impact-section section-band band-paper" id="impacto">
       <div className="section-heading narrow">
@@ -21,4 +21,4 @@ function VolunteerContent({ copy }) {
   )
 }
 
-export default VolunteerContent
+export default EducationContent

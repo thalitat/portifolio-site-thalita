@@ -15,7 +15,7 @@ export default defineConfig({
         projects: resolve(rootDirectory, 'projetos/index.html'),
         services: resolve(rootDirectory, 'servicos/index.html'),
         talks: resolve(rootDirectory, 'palestras/index.html'),
-        volunteering: resolve(rootDirectory, 'voluntariado/index.html'),
+        education: resolve(rootDirectory, 'educacional/index.html'),
         contact: resolve(rootDirectory, 'contato/index.html')
       }
     }

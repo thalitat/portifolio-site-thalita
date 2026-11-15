@@ -7,7 +7,7 @@ import HeroAndMetrics from '../sections/HeroAndMetrics'
 import ProjectsContent from '../sections/ProjectsContent'
 import ServicesContent from '../sections/ServicesContent'
 import TalkContent from '../sections/TalkContent'
-import VolunteerContent from '../sections/VolunteerContent'
+import EducationContent from '../sections/EducationContent'
 
 function HomePage({ copy, language, setLanguage, isDark, setIsDark, page }) {
   const pageContent = {
@@ -20,7 +20,7 @@ function HomePage({ copy, language, setLanguage, isDark, setIsDark, page }) {
     projetos: <ProjectsContent copy={copy} />,
     servicos: <ServicesContent copy={copy} />,
     palestras: <TalkContent copy={copy} />,
-    voluntariado: <VolunteerContent copy={copy} />,
+    educacional: <EducationContent copy={copy} />,
     contato: <ContactContent copy={copy} />
   }
 
